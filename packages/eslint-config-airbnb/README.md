@@ -1,6 +1,4 @@
-# eslint-config-airbnb
-
-[![npm version](https://badge.fury.io/js/eslint-config-airbnb.svg)](http://badge.fury.io/js/eslint-config-airbnb)
+# eslint-config-picdorsey
 
 This package provides Airbnb's .eslintrc as an extensible shared config.
 
@@ -8,21 +6,21 @@ This package provides Airbnb's .eslintrc as an extensible shared config.
 
 We export three ESLint configurations for your usage.
 
-### eslint-config-airbnb
+### eslint-config-picdorsey
 
 Our default export contains all of our ESLint rules, including ECMAScript 6+ and React. It requires `eslint`, `eslint-plugin-import`, `eslint-plugin-react`, and `eslint-plugin-jsx-a11y`.
 
 1. Install the correct versions of each package, which are listed by the command:
 
   ```sh
-  npm info "eslint-config-airbnb@latest" peerDependencies
+  npm info "eslint-config-picdorsey@latest" peerDependencies
   ```
 
   Linux/OSX users can simply run
 
   ```sh
   (
-    export PKG=eslint-config-airbnb;
+    export PKG=eslint-config-picdorsey;
     npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
   )
   ```
@@ -30,7 +28,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+ and
   Which produces and runs a command like:
 
   ```sh
-  npm install --save-dev eslint-config-airbnb eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
+  npm install --save-dev eslint-config-picdorsey eslint@^#.#.# eslint-plugin-vue@^#.#.# eslint-plugin-import@^#.#.#
   ```
 
   Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
@@ -46,24 +44,4 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+ and
   npm install --save-dev eslint-config-airbnb eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
   ```
 
-2. Add `"extends": "airbnb"` to your .eslintrc
-
-### eslint-config-airbnb/base
-
-This entry point is deprecated. See [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-base).
-
-### eslint-config-airbnb/legacy
-
-This entry point is deprecated. See [eslint-config-airbnb-base](https://npmjs.com/eslint-config-airbnb-base).
-
-See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
-the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
-for more information.
-
-## Improving this config
-
-Consider adding test cases if you're making complicated rules changes, like anything involving regexes. Perhaps in a distant future, we could use literate programming to structure our README as test cases for our .eslintrc?
-
-You can run tests with `npm test`.
-
-You can make sure this module lints with itself using `npm run lint`.
+2. Add `"extends": "picdorsey"` to your .eslintrc

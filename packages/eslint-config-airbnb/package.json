@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-airbnb",
-  "version": "14.0.0",
-  "description": "Airbnb's ESLint config, following our styleguide",
+  "name": "eslint-config-picdorsey",
+  "version": "1.0.0",
+  "description": "PicDorsey's ESLint config, following our styleguide (forked from airbnb).",
   "main": "index.js",
   "scripts": {
     "prelint": "editorconfig-tools check * rules/* test/*",
@@ -10,22 +10,27 @@
     "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
     "pretest": "npm run --silent lint",
     "test": "npm run --silent tests-only",
-    "travis": "cd ../eslint-config-airbnb-base && npm install && npm link && cd - && npm link eslint-config-airbnb-base && npm run --silent test ; npm unlink eslint-config-airbnb-base >/dev/null &"
+    "travis": "cd ../eslint-config-picdorsey-base && npm install && npm link && cd - && npm link eslint-config-picdorsey-base && npm run --silent test ; npm unlink eslint-config-airbnb-base >/dev/null &"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript"
+    "url": "https://github.com/picdorsey/javascript"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
     "config",
     "airbnb",
+    "picdorsey",
     "javascript",
     "styleguide"
   ],
   "author": "Jake Teton-Landis (https://twitter.com/@jitl)",
   "contributors": [
+    {
+      "name": "Adam Dorsey",
+      "url": "https://twitter.com/adamthebig"
+    },
     {
       "name": "Jake Teton-Landis",
       "url": "https://twitter.com/jitl"
@@ -42,11 +47,11 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
+    "url": "https://github.com/picdorsey/javascript/issues"
   },
-  "homepage": "https://github.com/airbnb/javascript",
+  "homepage": "https://github.com/picdorsey/javascript",
   "dependencies": {
-    "eslint-config-airbnb-base": "^11.0.1"
+    "eslint-config-picdorsey-base": "^1.0.0"
   },
   "devDependencies": {
     "babel-preset-airbnb": "^2.1.1",
@@ -55,18 +60,15 @@
     "eslint": "^3.13.0",
     "eslint-find-rules": "^1.14.3",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^3.0.2",
-    "eslint-plugin-react": "^6.9.0",
     "in-publish": "^2.0.0",
-    "react": ">= 0.13.0",
+    "vue": ">= 2.1.8",
     "safe-publish-latest": "^1.1.1",
     "tape": "^4.6.3"
   },
   "peerDependencies": {
     "eslint": "^3.13.0",
-    "eslint-plugin-jsx-a11y": "^3.0.2",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-react": "^6.9.0"
+    "eslint-plugin-vue": "^1.0.0"
   },
   "engines": {
     "node": ">= 4"

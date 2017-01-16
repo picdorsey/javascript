@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-airbnb-base",
-  "version": "11.0.1",
-  "description": "Airbnb's base JS ESLint config, following our styleguide",
+  "name": "eslint-config-picdorsey-base",
+  "version": "1.0.0",
+  "description": "PicDorsey's base JS ESLint config, following our styleguide, forked from airbnb.",
   "main": "index.js",
   "scripts": {
     "prelint": "editorconfig-tools check * rules/* test/*",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/airbnb/javascript"
+    "url": "https://github.com/picdorsey/javascript"
   },
   "keywords": [
     "eslint",
@@ -26,6 +26,10 @@
   ],
   "author": "Jake Teton-Landis (https://twitter.com/@jitl)",
   "contributors": [
+    {
+      "name": "Adam Dorsey",
+      "url": "https://twitter.com/adamthebig"
+    },
     {
       "name": "Jake Teton-Landis",
       "url": "https://twitter.com/jitl"
@@ -42,9 +46,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/airbnb/javascript/issues"
+    "url": "https://github.com/picdorsey/javascript/issues"
   },
-  "homepage": "https://github.com/airbnb/javascript",
+  "homepage": "https://github.com/picdorsey/javascript",
   "devDependencies": {
     "babel-preset-airbnb": "^2.1.1",
     "babel-tape-runner": "^2.0.1",
