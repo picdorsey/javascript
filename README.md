@@ -1,4 +1,4 @@
-# Piccirilli Dorsey JavaScript Style Guide {
+# Piccirilli Dorsey JavaScript Style Guide
 
 *A very reasonable approach to JavaScript, forked from the super popular airbnb guide.*
 
